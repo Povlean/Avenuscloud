@@ -11,10 +11,9 @@
 
     <artifactId>common</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>common-util</module>
-        <module>rabbit-util</module>
-        <module>service-util</module>
         <module>service-util</module>
     </modules>
 
@@ -34,7 +33,7 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.3.1</version>
+            <version>3.5.2</version>
             <scope>provided</scope>
         </dependency>
 

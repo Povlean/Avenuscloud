@@ -40,7 +40,6 @@
             <version>3.1.0</version>
         </dependency>
 
-        <!-- 日期工具栏依赖 -->
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
