@@ -1,1 +1,66 @@
-2023-07-15 11:50:29.444 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-08-01 10:17:44.776 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-08-01 15:37:28.093 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-08-01 15:37:52.326 [http-nio-8201-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+### The error may exist in com/ean/yygh/hosp/mapper/HospitalSetMapper.java (best guess)
+### The error may involve com.ean.yygh.hosp.mapper.HospitalSetMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO hospital_set  ( id, hosname, hoscode, api_url, sign_key, contacts_name, contacts_phone, status, create_time, update_time, is_deleted )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+; Duplicate entry '2' for key 'hospital_set.PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY']
+2023-08-01 15:37:56.743 [http-nio-8201-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+### The error may exist in com/ean/yygh/hosp/mapper/HospitalSetMapper.java (best guess)
+### The error may involve com.ean.yygh.hosp.mapper.HospitalSetMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO hospital_set  ( id, hosname, hoscode, api_url, sign_key, contacts_name, contacts_phone, status, create_time, update_time, is_deleted )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+; Duplicate entry '2' for key 'hospital_set.PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY']
+2023-08-01 15:37:59.924 [http-nio-8201-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+### The error may exist in com/ean/yygh/hosp/mapper/HospitalSetMapper.java (best guess)
+### The error may involve com.ean.yygh.hosp.mapper.HospitalSetMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO hospital_set  ( id, hosname, hoscode, api_url, sign_key, contacts_name, contacts_phone, status, create_time, update_time, is_deleted )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+; Duplicate entry '2' for key 'hospital_set.PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY']
+2023-08-01 15:38:04.946 [http-nio-8201-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+### The error may exist in com/ean/yygh/hosp/mapper/HospitalSetMapper.java (best guess)
+### The error may involve com.ean.yygh.hosp.mapper.HospitalSetMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO hospital_set  ( id, hosname, hoscode, api_url, sign_key, contacts_name, contacts_phone, status, create_time, update_time, is_deleted )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+; Duplicate entry '2' for key 'hospital_set.PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY']
+2023-08-01 16:04:36.049 [http-nio-8201-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+### The error may exist in com/ean/yygh/hosp/mapper/HospitalSetMapper.java (best guess)
+### The error may involve com.ean.yygh.hosp.mapper.HospitalSetMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO hospital_set  ( id, hosname, hoscode, api_url, sign_key, contacts_name, contacts_phone, status, create_time, update_time, is_deleted )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+; Duplicate entry '2' for key 'hospital_set.PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY']
+2023-08-01 16:04:43.343 [http-nio-8201-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+### The error may exist in com/ean/yygh/hosp/mapper/HospitalSetMapper.java (best guess)
+### The error may involve com.ean.yygh.hosp.mapper.HospitalSetMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO hospital_set  ( id, hosname, hoscode, api_url, sign_key, contacts_name, contacts_phone, status, create_time, update_time, is_deleted )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+; Duplicate entry '2' for key 'hospital_set.PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY']
+2023-08-01 16:04:55.669 [http-nio-8201-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+### The error may exist in com/ean/yygh/hosp/mapper/HospitalSetMapper.java (best guess)
+### The error may involve com.ean.yygh.hosp.mapper.HospitalSetMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO hospital_set  ( id, hosname, hoscode, api_url, sign_key, contacts_name, contacts_phone, status, create_time, update_time, is_deleted )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+; Duplicate entry '2' for key 'hospital_set.PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY']
+2023-08-01 16:07:01.153 [http-nio-8201-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+### The error may exist in com/ean/yygh/hosp/mapper/HospitalSetMapper.java (best guess)
+### The error may involve com.ean.yygh.hosp.mapper.HospitalSetMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO hospital_set  ( id, hosname, hoscode, api_url, sign_key, contacts_name, contacts_phone, status, create_time, update_time, is_deleted )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY'
+; Duplicate entry '2' for key 'hospital_set.PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'hospital_set.PRIMARY']

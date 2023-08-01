@@ -59,6 +59,54 @@ export const constantRouterMap = [
     ]
   },
 
+  // 医院设置管理系统路由
+  {
+    path: '/hospset',
+    component: Layout,
+    redirect: '/hospset/list',
+    name: 'Example',
+    meta: { title: '医院设置管理', icon: 'example' },
+    children: [
+      {
+        path: 'list',
+        name: '医院设置列表',
+        component: () => import('@/views/hospset/list'),
+        meta: { title: '医院设置列表', icon: 'table' }
+      },
+      {
+        path: 'add',
+        name: '医院设置添加',
+        component: () => import('@/views/hospset/add'),
+        meta: { title: '医院设置添加', icon: 'tree' }
+      },
+      {
+        path: 'edit/:id',
+        name: 'EduTeacherEdit',
+        component: () => import('@/views/hospset/add'),
+        meta: { title: '编辑', noCache: true },
+        hidden: true
+      }
+    ]
+  },
+
+  {
+    path: '/cmn',
+    component: Layout,
+    redirect: '/cmn/list',
+    name: '数据管理',
+    alwaysShow: true,
+    meta: { title: '数据管理', icon: 'example' },
+    children: [
+      {
+        path: 'list',
+        name: '数据字典',
+        component: () => import('@/views/dict/list'),
+        meta: { title: '数据字典', icon: 'table' }
+      }
+    ]
+  },
+
+
   {
     path: '/form',
     component: Layout,

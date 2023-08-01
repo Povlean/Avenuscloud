@@ -22,6 +22,7 @@ import java.util.Random;
  */
 @RestController
 @RequestMapping("/admin/hosp/hospitalSet")
+@CrossOrigin("http://localhost:9528")
 public class HospitalSetController {
 
     @Resource
@@ -101,7 +102,7 @@ public class HospitalSetController {
     }
 
     // 批量删除医院设置
-    @DeleteMapping("/batchRemoveHospitalSet")
+    @DeleteMapping("/batchRemove")
     public Result batchRemoveHospitalSet(@RequestBody List<Long> ids) {
         boolean flag = hospitalSetService.removeBatchByIds(ids);
         if (flag) {
