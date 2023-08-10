@@ -5,8 +5,11 @@ import com.ean.yygh.common.result.Result;
 import com.ean.yygh.model.cmn.Dict;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -21,6 +24,18 @@ public class DictController {
 
     @Resource
     private DictService dictService;
+
+    // 导入数据字典
+    @PostMapping("/importData")
+    public Result importDict(MultipartFile file) {
+        dictService.importDictData(file);
+        return Result.ok();
+    }
+
+    @GetMapping("/exportData")
+    public void exportData(HttpServletResponse response) {
+        dictService.exportData(response);
+    }
 
     @GetMapping("/findChildData/{id}")
     public Result findChildData(@PathVariable("id") Long id) {

@@ -1,0 +1,53 @@
+2023-08-08 10:32:07.419 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-08-08 10:32:10.795 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2023-08-08 10:32:10.809 [restartedMain] WARN  o.s.d.m.c.index.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2023-08-08 10:32:40.854 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hospitalServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hospitalRepository': Invocation of init method failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=192.168.145.129:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=192.168.145.129:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]
+2023-08-08 10:37:08.447 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-08-08 10:37:11.614 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2023-08-08 10:37:11.626 [restartedMain] WARN  o.s.d.m.c.index.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2023-08-08 10:37:41.659 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hospitalServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hospitalRepository': Invocation of init method failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.18.45.209:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.18.45.209:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]
+2023-08-08 15:29:33.735 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-08-08 15:29:37.307 [restartedMain] WARN  o.s.d.m.c.index.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2023-08-08 15:30:07.346 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hospitalServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hospitalRepository': Invocation of init method failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.18.45.209:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=172.18.45.209:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]

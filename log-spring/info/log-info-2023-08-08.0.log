@@ -1,0 +1,133 @@
+2023-08-08 10:32:06.997 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.21.Final
+2023-08-08 10:32:07.023 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - Starting ServiceHospApplication on LAPTOP-HGHLJ3SA with PID 38312 (E:\runoob\Git-Repository\Avenuscloud\yygh_parent\service\service-hosp\target\classes started by Asphyxia in E:\runoob\Git-Repository\Avenuscloud\yygh_parent)
+2023-08-08 10:32:07.024 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2023-08-08 10:32:07.084 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\apache-maven-3.8.6\mvn_reposity\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2023-08-08 10:32:07.085 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-08 10:32:07.085 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-08 10:32:08.058 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-08 10:32:08.059 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-08 10:32:08.118 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54ms. Found 1 MongoDB repository interfaces.
+2023-08-08 10:32:08.133 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-08 10:32:08.134 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-08 10:32:08.148 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ean.yygh.hosp.repository.HospitalRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-08-08 10:32:08.148 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2023-08-08 10:32:08.681 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2023-08-08 10:32:08.690 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2023-08-08 10:32:08.691 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-08 10:32:08.691 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-08-08 10:32:08.784 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-08 10:32:08.784 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1698 ms
+2023-08-08 10:32:10.522 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.145.129:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-08-08 10:32:10.833 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-08-08 10:32:30.556 [cluster-ClusterId{value='64d1a92a1505c549ce4161e8', description='null'}-192.168.145.129:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 192.168.145.129:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2023-08-08 10:32:40.859 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-08 10:32:40.869 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-08-08 10:37:08.031 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.21.Final
+2023-08-08 10:37:08.057 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - Starting ServiceHospApplication on LAPTOP-HGHLJ3SA with PID 38512 (E:\runoob\Git-Repository\Avenuscloud\yygh_parent\service\service-hosp\target\classes started by Asphyxia in E:\runoob\Git-Repository\Avenuscloud\yygh_parent)
+2023-08-08 10:37:08.057 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2023-08-08 10:37:08.114 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\apache-maven-3.8.6\mvn_reposity\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2023-08-08 10:37:08.114 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-08 10:37:08.115 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-08 10:37:09.089 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-08 10:37:09.090 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-08 10:37:09.138 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45ms. Found 1 MongoDB repository interfaces.
+2023-08-08 10:37:09.151 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-08 10:37:09.152 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-08 10:37:09.163 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ean.yygh.hosp.repository.HospitalRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-08-08 10:37:09.164 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2023-08-08 10:37:09.667 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2023-08-08 10:37:09.678 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2023-08-08 10:37:09.679 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-08 10:37:09.679 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-08-08 10:37:09.776 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-08 10:37:09.777 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1662 ms
+2023-08-08 10:37:11.398 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[172.18.45.209:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-08-08 10:37:11.642 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-08-08 10:37:31.437 [cluster-ClusterId{value='64d1aa57fbf7fa1f1ea70c46', description='null'}-172.18.45.209:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 172.18.45.209:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2023-08-08 10:37:41.663 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-08 10:37:41.672 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-08-08 15:29:33.288 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.21.Final
+2023-08-08 15:29:33.324 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - Starting ServiceHospApplication on LAPTOP-HGHLJ3SA with PID 10484 (E:\runoob\Git-Repository\Avenuscloud\yygh_parent\service\service-hosp\target\classes started by Asphyxia in E:\runoob\Git-Repository\Avenuscloud\yygh_parent)
+2023-08-08 15:29:33.325 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2023-08-08 15:29:33.379 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\apache-maven-3.8.6\mvn_reposity\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2023-08-08 15:29:33.380 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-08 15:29:33.380 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-08 15:29:34.489 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-08 15:29:34.490 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-08 15:29:34.554 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58ms. Found 1 MongoDB repository interfaces.
+2023-08-08 15:29:34.572 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-08 15:29:34.573 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-08 15:29:34.589 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ean.yygh.hosp.repository.HospitalRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-08-08 15:29:34.589 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2023-08-08 15:29:35.202 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2023-08-08 15:29:35.214 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2023-08-08 15:29:35.216 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-08 15:29:35.217 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-08-08 15:29:35.328 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-08 15:29:35.328 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1947 ms
+2023-08-08 15:29:37.024 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[172.18.45.209:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-08-08 15:29:37.293 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-08 15:29:37.329 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-08-08 15:29:57.062 [cluster-ClusterId{value='64d1eee1a00c3962895b96d0', description='null'}-172.18.45.209:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 172.18.45.209:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2023-08-08 15:30:07.353 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-08 15:30:07.368 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

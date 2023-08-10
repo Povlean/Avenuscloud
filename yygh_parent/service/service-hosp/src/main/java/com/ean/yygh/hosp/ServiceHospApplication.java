@@ -11,7 +11,9 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(basePackages = "com.ean")
 public class ServiceHospApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(ServiceHospApplication.class,args);
     }
+
 }

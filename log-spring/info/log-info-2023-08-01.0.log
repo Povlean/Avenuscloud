@@ -1,0 +1,99 @@
+2023-08-01 10:17:44.344 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.21.Final
+2023-08-01 10:17:44.390 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - Starting ServiceHospApplication on LAPTOP-HGHLJ3SA with PID 24572 (E:\runoob\Git-Repository\Avenuscloud\yygh_parent\service\service-hosp\target\classes started by Asphyxia in E:\runoob\Git-Repository\Avenuscloud\yygh_parent)
+2023-08-01 10:17:44.391 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2023-08-01 10:17:44.441 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\apache-maven-3.8.6\mvn_reposity\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2023-08-01 10:17:44.442 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-01 10:17:44.442 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-01 10:17:45.536 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-01 10:17:45.539 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-01 10:17:45.573 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2023-08-01 10:17:46.224 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2023-08-01 10:17:46.233 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2023-08-01 10:17:46.234 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-01 10:17:46.234 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-08-01 10:17:46.322 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-01 10:17:46.322 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1879 ms
+2023-08-01 10:17:48.185 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-01 10:17:48.282 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 10:17:48.325 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-01 10:17:48.777 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-08-01 10:17:48.794 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2023-08-01 10:17:48.828 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-08-01 10:17:49.008 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-08-01 10:17:49.016 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8201"]
+2023-08-01 10:17:49.040 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8201 (http) with context path ''
+2023-08-01 10:17:49.043 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - Started ServiceHospApplication in 5.272 seconds (JVM running for 6.85)
+2023-08-01 10:18:58.630 [http-nio-8201-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 10:18:58.630 [http-nio-8201-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-01 10:18:58.639 [http-nio-8201-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2023-08-01 10:18:58.780 [http-nio-8201-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-01 10:18:58.962 [http-nio-8201-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-01 11:00:19.971 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 11:00:19.973 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-01 11:00:19.981 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-01 15:37:27.606 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.21.Final
+2023-08-01 15:37:27.655 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - Starting ServiceHospApplication on LAPTOP-HGHLJ3SA with PID 9272 (E:\runoob\Git-Repository\Avenuscloud\yygh_parent\service\service-hosp\target\classes started by Asphyxia in E:\runoob\Git-Repository\Avenuscloud\yygh_parent)
+2023-08-01 15:37:27.656 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2023-08-01 15:37:27.723 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\apache-maven-3.8.6\mvn_reposity\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2023-08-01 15:37:27.723 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-01 15:37:27.723 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-01 15:37:29.070 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-01 15:37:29.073 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-01 15:37:29.117 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2023-08-01 15:37:30.348 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2023-08-01 15:37:30.364 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2023-08-01 15:37:30.365 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-01 15:37:30.366 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-08-01 15:37:30.525 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-01 15:37:30.526 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2802 ms
+2023-08-01 15:37:32.859 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-01 15:37:32.969 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 15:37:33.013 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-01 15:37:33.509 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-08-01 15:37:33.529 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2023-08-01 15:37:33.561 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-08-01 15:37:33.764 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-08-01 15:37:33.773 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8201"]
+2023-08-01 15:37:33.797 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8201 (http) with context path ''
+2023-08-01 15:37:33.800 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - Started ServiceHospApplication in 6.91 seconds (JVM running for 8.55)
+2023-08-01 15:37:40.994 [http-nio-8201-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 15:37:40.994 [http-nio-8201-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-01 15:37:41.004 [http-nio-8201-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2023-08-01 15:37:41.207 [http-nio-8201-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-01 15:37:41.415 [http-nio-8201-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-01 17:31:17.100 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 17:31:17.105 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-01 17:31:17.112 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-01 20:43:53.213 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.21.Final
+2023-08-01 20:43:53.290 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - Starting ServiceHospApplication on LAPTOP-HGHLJ3SA with PID 25324 (E:\runoob\Git-Repository\Avenuscloud\yygh_parent\service\service-hosp\target\classes started by Asphyxia in E:\runoob\Git-Repository\Avenuscloud\yygh_parent)
+2023-08-01 20:43:53.292 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - The following profiles are active: dev
+2023-08-01 20:43:53.377 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\apache-maven-3.8.6\mvn_reposity\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/apache-maven-3.8.6/mvn_reposity/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2023-08-01 20:43:53.378 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-01 20:43:53.378 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-01 20:43:55.147 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-01 20:43:55.149 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-01 20:43:55.188 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2023-08-01 20:43:56.184 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8201 (http)
+2023-08-01 20:43:56.202 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8201"]
+2023-08-01 20:43:56.204 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-01 20:43:56.205 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-08-01 20:43:56.334 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-01 20:43:56.335 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2956 ms
+2023-08-01 20:43:59.410 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-01 20:43:59.634 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 20:43:59.724 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-08-01 20:44:00.573 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-08-01 20:44:00.613 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2023-08-01 20:44:00.659 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-08-01 20:44:01.045 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-08-01 20:44:01.061 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8201"]
+2023-08-01 20:44:01.098 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8201 (http) with context path ''
+2023-08-01 20:44:01.103 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - Started ServiceHospApplication in 8.916 seconds (JVM running for 11.046)
+2023-08-01 21:28:22.400 [http-nio-8201-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 21:28:22.403 [http-nio-8201-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-01 21:28:22.426 [http-nio-8201-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+2023-08-01 21:28:22.650 [http-nio-8201-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-01 21:28:22.900 [http-nio-8201-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-01 22:22:52.669 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 22:22:52.677 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-01 22:22:52.686 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

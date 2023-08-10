@@ -1,31 +1,82 @@
 package com.ean.yygh.cmn.service.impl;
 
+import com.alibaba.excel.EasyExcel;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ean.yygh.cmn.config.DictListener;
 import com.ean.yygh.cmn.mapper.DictMapper;
 import com.ean.yygh.cmn.service.DictService;
 import com.ean.yygh.model.cmn.Dict;
+import com.ean.yygh.vo.cmn.DictEeVo;
+import org.springframework.beans.BeanUtils;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
-
+import org.springframework.web.multipart.MultipartFile;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @description:TODO
- * @author:Povlean
- */
 @Service
 public class DictServiceImpl extends ServiceImpl<DictMapper, Dict> implements DictService {
     @Override
+    @Cacheable(value = "dict", keyGenerator = "keyGenerator")
     public List<Dict> findChildData(Long id) {
         QueryWrapper wrapper = new QueryWrapper();
         wrapper.eq("parent_id",id);
         List<Dict> dictList = baseMapper.selectList(wrapper);
-        for (Dict dict : dictList) {
-            Long dictId = dict.getId();
-            boolean isChild = this.isChildren(dictId);
-            dict.setHasChildren(isChild);
-        }
+        dictList.stream().forEach(dict -> {
+            boolean isChildren = this.isChildren(dict.getId());
+            dict.setHasChildren(isChildren);
+        });
         return dictList;
+    }
+
+    @Override
+    public void exportData(HttpServletResponse response) {
+        // 将服务器的响应值返回给浏览器
+        response.setContentType("application/vnd.ms-excel");
+        response.setCharacterEncoding("utf-8");
+        // 这里URLEncoder.encode可以防止中文乱码 当然和easyexcel没有关系
+        String fileName = null;
+        try {
+            fileName = URLEncoder.encode("数据字典", "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+        response.setHeader("Content-disposition", "attachment;filename="+ fileName + ".xlsx");
+        // 在数据库中查询dict表中的数据
+        List<Dict> dictList = this.list();
+        // 存放VO类型的list
+        List<DictEeVo> dictEeVoList = new ArrayList<>(dictList.size());
+        for (Dict dict : dictList) {
+            DictEeVo dictEeVo = new DictEeVo();
+            BeanUtils.copyProperties(dict, dictEeVo);
+            dictEeVoList.add(dictEeVo);
+        }
+        // 将VOlist写到Excel表格中
+        try {
+            EasyExcel.write(response.getOutputStream(),DictEeVo.class)
+                    .sheet("数据字典")
+                    .doWrite(dictEeVoList);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    // @CacheEvict(value = "dict", allEntries = true)
+    public void importDictData(MultipartFile file) {
+        try {
+            EasyExcel.read(file.getInputStream(), DictEeVo.class, new DictListener(baseMapper))
+                    .sheet()
+                    .doRead();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private boolean isChildren(Long dictId) {
