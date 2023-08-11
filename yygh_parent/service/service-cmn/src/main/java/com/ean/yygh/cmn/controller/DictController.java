@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
- * @description:TODO
+ * @description:数据字典接口
  * @author:Povlean
  */
 @Api("数据字典接口")
@@ -41,6 +41,13 @@ public class DictController {
     public Result findChildData(@PathVariable("id") Long id) {
         List<Dict> list = dictService.findChildData(id);
         return Result.ok(list);
+    }
+
+    @GetMapping("/getName/{dictCode}/{value}")
+    public String getName(@PathVariable String dictCode,
+                          @PathVariable String value) {
+        String dictName = dictService.getDictName(dictCode, value);
+        return dictName;
     }
 
 }
