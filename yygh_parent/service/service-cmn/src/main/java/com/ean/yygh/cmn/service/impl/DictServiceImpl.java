@@ -42,7 +42,7 @@ public class DictServiceImpl extends ServiceImpl<DictMapper, Dict> implements Di
         response.setContentType("application/vnd.ms-excel");
         response.setCharacterEncoding("utf-8");
         // 这里URLEncoder.encode可以防止中文乱码 当然和easyexcel没有关系
-        String fileName = null;
+        String fileName;
         try {
             fileName = URLEncoder.encode("数据字典", "UTF-8");
         } catch (UnsupportedEncodingException e) {

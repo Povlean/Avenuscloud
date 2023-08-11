@@ -286,3 +286,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-08-11 16:44:16.955 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP service-hosp 192.168.114.1:8201 register finished
 2023-08-11 16:44:19.290 [restartedMain] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
 2023-08-11 16:44:19.292 [restartedMain] INFO  com.ean.yygh.hosp.ServiceHospApplication - Started ServiceHospApplication in 22.848 seconds (JVM running for 24.582)
+2023-08-11 17:19:22.526 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2023-08-11 17:19:22.532 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2023-08-11 17:19:22.532 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-11 17:19:22.542 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:345}] to 8.137.12.99:27017 because the pool has been closed.
